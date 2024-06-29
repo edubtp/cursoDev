@@ -1,23 +1,21 @@
-// pages/index.js
-import React from 'react';
-import { TextField, Button } from '@material-ui/core';
-
-const Home = () => {
-    const handleLogin = () => {
-        // Lógica para autenticar o usuário
-        alert('Login realizado!');
-    };
-
+function Home() {
     return (
         <div>
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
-                <TextField label="Username" variant="outlined" />
-                <TextField label="Password" variant="outlined" type="password" />
-                <Button type="submit" variant="contained" color="primary">Login</Button>
+                <label>
+                    Username:
+                    <input type="text" />
+                </label>
+                <br />
+                <label>
+                    Password:
+                    <input type="password" />
+                </label>
+                <br />
+                <button type="submit">Login</button>
             </form>
         </div>
-    );
-};
-
+    )
+}
 export default Home;
