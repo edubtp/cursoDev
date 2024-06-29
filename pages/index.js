@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className={classes.root}>
+        <div>
             <h1>Login</h1>
             <form>
                 <TextField label="Username" variant="outlined" />
