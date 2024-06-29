@@ -1,4 +1,11 @@
-function Home() {
+// pages/index.js
+const Home = () => {
+    const handleLogin = (event) => {
+        event.preventDefault(); // Evita que o formulário recarregue a página
+        // Aqui você pode adicionar lógica para autenticar o usuário
+        alert('Login realizado!');
+    };
+
     return (
         <div>
             <h1>Login</h1>
@@ -16,6 +23,7 @@ function Home() {
                 <button type="submit">Login</button>
             </form>
         </div>
-    )
-}
+    );
+};
+
 export default Home;
